@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.outer {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.passwordbox {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 20px 40px;
+  width: 55%;
+  background-color: rgba(49, 64, 78, 0.699);
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.textfield {
+  height: 35px;
+  width: 80%;
+  margin-top: 5px;
+  background-color: white;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: black;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.button {
+  background-color: blue;
+  height: 35.8px;
+  position: relative;
+  top: 2px;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  color: orange;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
+  .passwordbox {
+    width: 90%; /* Ensure better fit on small screens */
+    padding: 15px 20px; /* Reduce padding for smaller devices */
+  }
+
+  .textfield {
+    width: 70%; /* Adjust textfield width for mobile */
+    font-size: 16px; /* Slightly reduce font size for mobile */
+  }
+
+  .button {
+    height: 35px; /* Ensure button height matches mobile view */
+  }
+
+  .options {
+    flex-direction: column; /* Stack options vertically on small screens */
+    gap: 10px; /* Add gap between items */
+  }
+}
